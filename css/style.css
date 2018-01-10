@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  background-color: #f2f1f4;
+}
+
+h1,
+h2 {
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #fff;
+  background-color: #30a893;
+  text-transform: uppercase;
+  line-height: 2.5em;
+  padding-left: 0.5em;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+p {
+  line-height: 1.8em;
+  color: #72757c;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  text-align: center;
+}
+
+ul.menu {
+  background-color: #30a893;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+li.menu {
+  line-height: 5em;
+  display: block;
+}
+
+.menu a {
+  font-family: "PT Sans Narrow", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6em;
+}
+
+img.photo {
+  max-width: 100%;
+}
+
+section {
+  margin: 0;
+}
+
+.article {
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+aside {
+  background-color: #b6dbb1;
+  padding: 1em;
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  li.menu {
+    display: inline-block;
+    padding: 0 2em;
+  }
+  .article {
+    margin-bottom: 2em;
+  }
+  aside {
+    padding: 1.5em 0;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .article {
+    max-width: 75%;
+    float: left;
+    padding: 2em;
+  }
+
+  .sidebar {
+    max-width: 25%;
+    float: right;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
